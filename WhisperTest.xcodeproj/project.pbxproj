@@ -11,6 +11,7 @@
 		C819A1C4292FC92F009D9F51 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C819A1C3292FC92F009D9F51 /* ContentView.swift */; };
 		C819A1C6292FC930009D9F51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C819A1C5292FC930009D9F51 /* Assets.xcassets */; };
 		C819A1C9292FC930009D9F51 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C819A1C8292FC930009D9F51 /* Preview Assets.xcassets */; };
+		C819A1D2292FC947009D9F51 /* whisper in Frameworks */ = {isa = PBXBuildFile; productRef = C819A1D1292FC947009D9F51 /* whisper */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C819A1D2292FC947009D9F51 /* whisper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = WhisperTest;
+			packageProductDependencies = (
+				C819A1D1292FC947009D9F51 /* whisper */,
+			);
 			productName = WhisperTest;
 			productReference = C819A1BE292FC92F009D9F51 /* WhisperTest.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +118,9 @@
 				Base,
 			);
 			mainGroup = C819A1B5292FC92F009D9F51;
+			packageReferences = (
+				C819A1D0292FC947009D9F51 /* XCRemoteSwiftPackageReference "whisper" */,
+			);
 			productRefGroup = C819A1BF292FC92F009D9F51 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -336,6 +344,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C819A1D0292FC947009D9F51 /* XCRemoteSwiftPackageReference "whisper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ggerganov/whisper.spm";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C819A1D1292FC947009D9F51 /* whisper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C819A1D0292FC947009D9F51 /* XCRemoteSwiftPackageReference "whisper" */;
+			productName = whisper;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C819A1B6292FC92F009D9F51 /* Project object */;
 }
